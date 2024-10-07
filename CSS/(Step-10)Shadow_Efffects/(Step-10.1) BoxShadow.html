@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: beige;
+            border: 2px solid red;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .box{
+            height: 400px;
+            width: 400px;
+            border: 2px solid green;
+            box-shadow: 30px 10px rgb(183, 183, 183);
+            /* First Value:- x-offset i.e. x-axis ke along shadow, 
+               Second Value:- y-offset i.e. y-axis ke along shadow
+               Third Value:- Shadow colour 
+               
+               NOTE:- Agar main -ve x-axis par shadow banana chahta hoon toh fir main x-offset ki value ko -ve kar dunga, similarly
+                      -ve y-axis par bhi apply hota hai
+               */
+
+               box-shadow: 10px 20px 60px red;
+               /* Fisrt, Second value toh same hi hain jo oopar likhi hain.......Third Value jo hai blurr radius ki value hai
+               jitni badi value utna hi zyada blurr radius */
+
+               box-shadow: 10px 20px 60px 100px blue;
+               /* Fisrt value(x-axis offset), Second value(y-axis offset) third value (blurr radius), 
+               fourth value(spread radius...i.e. kitni door tak humari shadow failni chahiye spread honi chahiye) */
+
+               box-shadow: inset 10px 20px pink;
+               /* inset value se shadow jo hai andar ki side banegi.....second and third value are x-axis & y-axis offset */
+
+               box-shadow: 20px 20px orange, 30px 40px cadetblue;
+               /* maine alag alag colur ki 2 shadow add kardi.......pehli shadow orange colour ki and second is blue colour ki
+                */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+            <img class="image" src="TajMhal.jpg" alt="TajMhal" height="200px" width="200px">
+            <h2>Welcome to the WebDev World!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, deleniti commodi eos assumenda, esse
+                eligendi sapiente perspiciatis veniam qui rem nostrum fugiat praesentium nam sed ut eveniet
+                atque? Omnis, est.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

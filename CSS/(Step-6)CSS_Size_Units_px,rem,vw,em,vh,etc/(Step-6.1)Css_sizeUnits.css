@@ -1,0 +1,55 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    border: 1px solid greenyellow;
+    background-color:black;
+    width: 50vw;
+    height: 100vh;
+}
+
+.child{
+    border: 1px solid orange;
+    background-color: orange;
+    width: 20vw;
+    height: 20vh;
+}
+
+
+
+
+/* *{
+    box-sizing: border-box;
+}
+
+.box{
+    background-color:olive;
+    color: white;
+    border: 100% solid olive;
+    height: 40px;
+    padding: 10px;
+} */
+
+/* Absolute Size Units are:- px, cm, m, inch, etc
+   Relative Size Units are:- vh, vw, em, rem, etc
+
+   "em" unit jo hai parent par depend karti hai....jaise ki agar maine 2 div tag banaye ek ke andar ek hai i.e., ek div tag ke andar
+   doosra div tag hai......or maine parent wale div tag ke andar koi text daala or uska size 1px rakh diya.....or child wale div tag
+   ke andar ek text rakha or uska size 10em rakh diya toh jo andar wale child div tag kaa text hai woh apne parent yaani oopar wale
+   div tag ke size se apne size ko multiply kar dega......i.e.,[ child's text size= parent's text size * child's text size:; 10em=20*10=200px  ] 
+
+
+
+   "rem" size unit mein bhi same same hi hota hai.....ismein yeh wali size unit bas root element par depend karti hai......like maine 
+   kisi text kaa size 10rem de diya hai toh yeh 10rem kaa size root element ke size se multiply ho jaayega...or root element humara
+   <html> tag hota hai or by default root element kaa size 16px hota hai.......i.e. 10rem= 10*16px=160px
+
+
+
+   "%" size unit apne parent element par depend karti hai
+
+*/

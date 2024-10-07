@@ -1,0 +1,125 @@
+<!-- 
+    What is Box Model ?
+        Box model kehta hai ki webpage par koi bhi content jo render hoga woh har ek content ko box mein render karega or rectangular
+        box mein render hoga.....chahe woh advertisement ho, yaa koi button ho, text ho, etc. In HTML and CSS, every element is
+        considered a rectangular box, and the box model describes how these boxes are structured.
+
+        It consists of four main parts: Iss rectangular box mein 4 part honge, (i) Content (ii) Padding (iii) Border (iv) Margin
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step-1 Box Model</title>
+    <style>
+        
+        /* asterisk(*) is the universal selector....ismein jo bhi proprty add karenge toh woh sabhi elemnts par apply hogi */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading{
+            /* border-style: solid;
+            border-width: 1px;
+            border-color: red; */
+
+            /* Oppar maine 3 line mein likha hai or inn 3 line ko main short hand notation mein likh sakta hoon....see below:- */
+            border: solid 2px red;
+
+            background-color: beige;
+            /* border-radius: 10px; */
+            border-top-left-radius: 10px;
+            border-left-color:darkblue;
+            width: 500px;
+            /* padding: 50px; */
+            margin: 20px;
+
+            /* padding: 15px 25px 20px 50px; */     /* short hand notation for padding...first value(padding-top),
+                                                        second value(padding right) third(padding-bottom), fourth value(padding left) */
+                                                            /* OR */
+            padding: 20px 40px; /*20px is applied on vertical axis(y-axis, top and bottom) and 40px(x-axis, horizontal(left and right)*/                                                
+         }
+
+
+        .para1{
+            background-color: chocolate;
+            border: 3px solid red;
+            border-radius: 10px;
+            height: 200px;
+            width: 500px;
+            padding: 15px 25px 20px 50px;
+        }
+        .para2{
+            background-color:cornflowerblue;
+            border: 3px solid blueviolet;
+            border-radius: 10px;
+            height: 200px;
+            width: 500px;
+        }
+        .para3{
+            background-color:violet;
+            border: 3px solid gray;
+            border-radius: 10px;
+            height: 200px;
+            width: 500px;
+        }
+
+        
+        /*
+        'Span' tag ek inline elemnt hai or inline element par height and width apply nahin ho sakti. Inline elements do not
+        respect height and width properties. By default, inline elements do not have dimensions (height and width) that you can
+        set explicitly with CSS. To apply height and width to a <span> tag, you need to change its display property to either
+        block, inline-block, or inline-flex, depending on your specific layout needs.
+        */
+        span{
+            display: inline-block;
+            background-color:sandybrown;
+            border: 3px solid brown;
+            border-radius: 10px;
+            height: 200px;
+            width: 500px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Welcome to the World of WebDev</h1>
+
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+    </p>
+    <br><br>
+
+    <span>
+        Web Development
+    </span>
+
+    <p class="para2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+    </p>
+    <br><br>
+
+    <p class="para3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, laudantium, corporis eum quasi eaque cupiditate nihil
+         beatae totam similique asperiores voluptatem! Odio dicta amet veritatis iure ratione magni quod unde.
+    </p>
+</body>
+</html>

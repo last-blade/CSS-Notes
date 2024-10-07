@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Transforms</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .container{
+            padding: 20px;
+            background-color: #0F0F0F;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .item{
+            padding: 20px;
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            color: white;
+            font-size: 30px;
+        }
+
+        #RotateX:hover{
+            transform: rotateX(45deg);
+        }
+        #RotateY:hover{
+            transform: rotateY(45deg);
+        }
+        #RotateZ:hover{
+            transform: rotateZ(45deg);
+        }
+
+        #TranslateX:hover{
+            transform: translateX(100px);
+        }
+        #TranslateY:hover{
+            transform: translateY(100px);
+        }
+        #TranslateZ:hover{
+            transform: perspective(300px) translateZ(100px);
+        }
+
+        #ScaleX:hover{
+            transform: scaleX(2);
+        }
+        #ScaleY:hover{
+            transform: scaleY(2);
+        }
+        #ScaleZ:hover{
+            transform:perspective(300px) scaleZ(1.5) rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="RotateX" style="background-color: #f58d0e;">RotateX</div>
+        <div class="item" id="RotateY" style="background-color: #f58d0e;">RotateY</div>
+        <div class="item" id="RotateZ" style="background-color: #f58d0e;">RotateZ</div>
+        <div class="item" id="TranslateX" style="background-color: #EC3437;">TranslateX</div>
+        <div class="item" id="TranslateY" style="background-color: #EC3437;">TranslateY</div>
+        <div class="item" id="TranslateZ" style="background-color: #EC3437;">TranslateZ</div>
+        <div class="item" id="ScaleX" style="background-color: #6DBE4F;">ScaleX</div>
+        <div class="item" id="ScaleY" style="background-color: #6DBE4F;">ScaleY</div>
+        <div class="item" id="ScaleZ" style="background-color: #6DBE4F;">ScaleZ</div>
+    </div>
+</body>
+</html>

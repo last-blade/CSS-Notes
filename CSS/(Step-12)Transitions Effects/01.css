@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    border: 1px solid black;
+    height: 380px;
+    width: 380px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in 0.5s;
+}
+
+.box:hover img {
+    scale: 1.2;
+}

@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background-color: #161618;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 60px;
+    row-gap: 20px;
+
+    /* Defining the rows */
+    grid-template-rows: 100px 100px; /* 2 rows of 100px each but agar mujhe 10 rows banani hain toh fir 10 baar likhna padega ? toh
+                                        iska solution hai neeche:- */
+    grid-template-rows: repeat(2, 100px); /*first value(2 rows) and second value(size of row) but mujhe responsive design banana hai
+                                            toh fir main 'px' unit ki jagah 'fr' fraction unit kaa use karunga*/
+    grid-template-rows: repeat(2, 1fr); 
+    
+    /* 'fr' fraction unit kaa matlab kya hai ? Suppose mera parent container jo hai uski width hai 3000px and main jo hai 3 columns
+        create karta hoon and each column kaa size '1fr' kaa banata hoon toh fir equation kuch aisi banegi see below:display:
+        1fr + 1fr + 1fr = 3000px
+        3fr = 3000
+        1fr = 3000/3
+        1fr = 1000px 
+        
+        i.e. agar mere container kaa size agar 3000px hai or main 3 column 1fr size kaa banata hoon fir 1fr kaa matlab hua iss case
+        mein 1000px i.e. ek column kaa size 1000px hua.....
+    */
+
+
+    /* Defining columns */
+    grid-template-columns: 100px 100px 100px; /* 3 columns of 100px each*/
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 20px;
+}
+
+
+.item{
+    background-color: crimson;
+    border-radius: 10px;
+    color: white;
+}

@@ -1,0 +1,57 @@
+<!-- 'Align-items' wali property opposite hai justify-content wali property se........justify wali mein by-default horizontally
+      axis (x-axis) par kaam karti hai....but align-item wali property jo hai by-default vertical(y-axis or cross axis)
+      par apply hoti hai -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 3px solid red;
+            display: flex;
+            height: 800px;
+            flex-wrap: wrap;
+            align-items: center; /*vertical axis par (y-axis) centre mein aa jaayega content*/
+            justify-content: center; /*horizontal aixs (x-axis) par centre mein aa jaayega content*/
+            align-content: start; /*jitna bhi content hota hai woh iss property se handle ho jaata hai....i.e. align-content:entre;
+                                    se mera content hai hai flex container ke andar woh jo hai start position par pahunch
+                                    jaayega device ki display mein*/
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        #box1{
+            background-color:green;
+            order: 500; /*yeh property flex items par hi apply hoti hai kewal.....mera box1 last position par chala gaya*/
+        }
+        #box2{
+            background-color:chocolate;
+        }
+        #box3{
+            background-color:cornflowerblue;
+        }
+        #box4{
+            background-color:violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+    </div>
+</body>
+</html>

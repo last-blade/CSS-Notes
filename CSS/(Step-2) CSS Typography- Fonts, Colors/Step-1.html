@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step-1 CSS Typography</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Fonts---------------------------------------------------------------------------------------------------- */
+        .heading{
+            /* font-style: italic; */
+            font-family: "Bungee Spice", sans-serif;
+        }
+
+        .firstPara{
+            /* 'rgba' mein 'a' kaa matlab hota hai alpha i.e. alpha ki value decide karti hai transparency level */
+            color: rgba(66, 176, 86, 0.81) /*0.81 is the value of alpha i.e. transparency level*/
+        }
+
+        /* Applying color using hexadecimal value-------------------------------------------------------------------- */
+        .secondPara{
+            color: #E98400;
+        }
+
+         /* Applying color using HSL value-------------------------------------------------------------------- */
+        .thirdPara{
+            background-color: hsl(120, 50%, 30%); /*First Value--> red(0 or 360), 120 is green colour, 240 is blue colour
+                                                       Second Value--> Saturation(intensity of colour in percentage)
+                                                       Third Value--> Lightness of the coour in percentage     */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Welcome to the WebDev World</h1>
+    <p class="firstPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus natus odio quisquam explicabo hic vero, incidunt
+         est iusto, quam labore nemo dignissimos optio amet sunt ex non et enim?
+    </p>
+
+    <p class="secondPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus natus odio quisquam explicabo hic vero, incidunt
+         est iusto, quam labore nemo dignissimos optio amet sunt ex non et enim?
+    </p>
+    
+    <p class="thirdPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus natus odio quisquam explicabo hic vero, incidunt
+         est iusto, quam labore nemo dignissimos optio amet sunt ex non et enim?
+    </p>
+</body>
+</html>

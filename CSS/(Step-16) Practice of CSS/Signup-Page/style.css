@@ -1,0 +1,78 @@
+.innerbox{
+    border: 1px solid rgba(0, 0, 0, 0.177);
+    align-self: center;
+    width: 25vw;
+    height: 60vh;
+    position: relative;
+    margin: 0 auto;
+}
+input{
+    margin-left: 65px;
+    block-size: 30px;
+    inline-size: 260px;
+    border: 1px solid rgba(0, 0, 0, 0.177);
+    border-radius: 3px;
+    background-color: rgba(250, 244, 244, 0.932);
+}
+button{
+    margin-left: 70px;
+    block-size: 30px;
+    inline-size: 260px;
+    border-radius: 10px;
+    background-color:rgba(11, 133, 241, 0.504);
+    border-color:rgba(11, 133, 241, 0.504)
+}
+
+.or{
+    margin-left: 80px;
+}
+
+.loginfb{
+    color: navy;
+    padding-left: 115px;
+    text-decoration: none;
+}
+
+.forgotpass{
+ color: blue;
+ padding-left: 115px;
+ text-decoration: none;
+}
+
+.extremeouterbox{
+border: 1px solid rgba(0, 0, 0, 0.177);
+width: 25vw;
+height: 8vh;
+margin-top: 110px;
+position: relative;
+}
+
+.createAcc{
+     margin-top: 20px;
+    position: inherit;
+    left: 23%;
+    top: 15px;
+    text-decoration: none;
+}
+
+.dontaccount{
+    margin-top: 50px;
+}
+
+.fbicon{
+    position: relative;
+    top: 5px;
+    left: 120px;
+    color: darkblue;
+  
+}
+.playicon{
+    position: relative;
+    top: 80px;
+    left: 715px;
+}
+.icon{
+    position: relative;
+    top: 65px;
+    left: 690px;
+}

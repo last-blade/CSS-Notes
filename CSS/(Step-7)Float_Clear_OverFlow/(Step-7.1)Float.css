@@ -1,0 +1,7 @@
+#img1{
+    /* Float propery kaa use karke hum image ko float kara sakte hain webpage par, left, right, oopar, neeche kahin bhi set kar sakte
+     hain image ko by using float property*/
+    float: right;
+    height: 50vh;
+    width: 15vw;
+}

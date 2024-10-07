@@ -1,0 +1,170 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Martian+Mono:wght@200&family=Pacifico&family=Satisfy&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Martian+Mono:wght@200&family=Pacifico&family=Satisfy&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    overflow-x: hidden;
+    overflow:auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navigationBar{
+    width: 100%;
+    /* background-color: gold; */
+    /* border: 1px solid red; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+nav{
+    width: 100%;
+}
+
+
+#navList{
+    width: 100%;
+    margin-right: 15px;
+    margin-right: 15px;
+    list-style: none; /*iss se maine woh bullets hata diye list se jo numbering yaa dots bani rehti hain*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#brandName{
+    font-size: 2rem;
+    position: relative;
+    left: 20px;
+    color: orangered;
+    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Satisfy', cursive;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navItems{
+    display: flex;
+    gap: 15px;
+}
+
+.footerBox{
+    text-align: center;
+}
+
+.footerBox p {
+    color: orangered;
+}
+
+.contentBox{
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.items{
+    height: 280px;
+    width: 380px;
+    transition: all;
+    transition-duration: 0.2s;
+    transition-delay: 2ms;
+    transition-timing-function: linear;
+    border-radius: 15px;
+}
+
+.items:hover{
+    scale: 1.1;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.itemsName{
+font-size: 30px;
+font-family: 'Courgette', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Martian Mono', monospace;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;  
+position: relative;
+top: 5px; 
+}
+
+.sections{
+    /* display: flex;
+    justify-content: space-between; */
+/* padding-bottom: 10px; */
+    margin-bottom: 70px;
+    margin-top: 40px;
+}
+
+.Category{
+    position: relative;
+    top: 5px;
+    color: rgba(62, 62, 62, 0.868);
+    font-weight: bold;
+}
+
+.reviews{
+    position: relative;
+    top: 5px;
+    color: rgba(46, 45, 45, 0.868);
+    font-weight: bolder;
+}
+
+.star{
+    border: 1px solid orange;
+    height: 20px;
+    width: 20px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: orange;
+    /* margin-right: 5px; */
+}
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+}
+
+#star6{
+    height: 20px;
+    width: 20px;
+    border: 7px solid orange;
+    /* background-color: orange; */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+
+#star3{
+    height: 20px;
+    width: 20px;
+    border: 7px solid orange;
+    /* background-color: orange; */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}

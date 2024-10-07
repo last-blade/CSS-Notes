@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color:#161618;
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 4rem;
+
+    justify-items: end; /*yeh property container par apply hoti hai...container mein jo bhi content pada hai woh end mein shift kardo
+                        and yeh property horizontal axis(x-axis) ke liye hai*/
+
+    align-items: center; /* yeh property vertical axis(y-axis) ke liye hai*/   
+    
+    place-items: center; /*yeh property x-axis and y-axis dono par kaam karti hai....
+                            i.e., x-axis and y-axis par centre mein aa jaayenge items*/
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    /*Yeh property grid items par apply hoti hai and yeh property horizontal (x-axis) par kaam karti hai*/
+    /* justify-self: center; */
+     
+    /* justify-self: stretch; */
+
+    /* align-self: start; */
+     /*Vertical axis (y-axis) mein start position par*/
+
+    /* place-self: center; */
+     /*yeh property x-axis and y-axis dono par kaam karti hai....
+                        i.e., x-axis and y-axis par centre mein aa jaayenge items*/
+}

@@ -1,0 +1,61 @@
+<!-- JustifyContent:- yeh wali property jo hai 'main-axis' par kaam karti hai i.e. agar 'flex-direction row' hai toh fir 
+    main axis jo hai woh horizontal mein hogi i.e.X-axis....agar humari 'flex direction column' hai toh fir humari 'main
+    axis' jo hai vertically hogi (Y-axis) i.e. justify content wali property jo hai y-axis par kaam karegi -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="(Step-8.1)flexBox.css"> -->
+    <style>
+        .container{
+            background-color: beige;
+            border: 3px solid red;
+            display: flex;
+            height: 500px;
+            justify-content: center; /*Abhi flex direction 'row' hai iska matlab humari 'main axis' jo hai woh horizontal hai i.e.
+                                        x-axis.....and justify content property jo hai horizontally work karegi....and humne
+                                        justifty-content:centre; use kiya hai...toh iska matlab hai ki x-axis mein ke along centre 
+                                        mein place ho jaayega mera content jo bhi container box mein pada hua hai*/
+            
+            
+            justify-content: end;  
+            justify-content: space-between; /*jo bhi flex box hai....uss box ke andar jo content pada hua hai...toh uss content
+                                                ke beech mein equal space aa jaayega...*/
+
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        #box1{
+            background-color:green;
+        }
+        #box2{
+            background-color:chocolate;
+        }
+        #box3{
+            background-color:cornflowerblue;
+        }
+        #box4{
+            background-color:violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+    </div>
+</body>
+</html>

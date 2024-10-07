@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Step-10.3) Animation-Direction_Animation</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid red;
+        }
+
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            border-radius: 10px;
+            margin: 10px;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-delay: 1s;
+            animation-direction: alternate; /*picchli steps mein mera box jo hai end tak jaata hai or fir ekdum se gayab ho jaata hai
+                                            or apni initial position se dobara chalna shuru karta hai....but main chahta hoon
+                                            ki mera box start se end tak jaaye or fir end se start tak wapas aaye...toh iske liye
+                                            main animation-direction property kaa use karta hoon*/
+        }
+
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+
+            to{
+                top: 0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

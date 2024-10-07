@@ -1,0 +1,70 @@
+/* By default position jo hai static apllied hoti hai */
+
+
+
+
+/* no gap maintained in absolute positioning but in case of ralative positioning the gap will be maintained
+
+Fixed positioning mein image yaa jo bhi content hai woh apni jagah par fix rahega jaise ki hum page ko scroll karenge toh fir jo bhi
+ image fixed hai woh page ke scroll karne ke saath saath scroll nahin hogi page scroll karne par woh ussi jahan par fixed rahegi hategi
+  nahin scroll karne par.....jaise ki hum youtube page scroll kar rahe hain toh jo videos hain uss page paar woh page ko scroll karne 
+  ke saath saath oopar neeche hoti rehti hain agar hum fixed postioning apply karde kisi ek video template par toh fir woh scroll karne
+  par bhi wahin par rahega baaki saare templates scroll hote rahenge
+
+
+
+  And Sticky positioning mein hum positions bhi dete hain jaise ki top 100px; fir yeh dene se image top se thodi 
+  neeche aa jaayegi khisak jaayegi or fir khisakne ke baad woh image ussi jagah par fixed ho jaayegi fir woh image hilegi nahin page
+  ko scroll karne par bhi same as fixed positioning property..........bas fark yeh hai ki sticky mein hum image ki position ko reposition
+  karke sticky apply karte hain
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 'absolute' positioning jo hai hamesha apne sabse kareebi wali element ke reltively apply hoti hai property.....mera jo
+ 'div' element hai or uske andar mera content pada hua hai....toh agar main kisi content par 'absoulye' position apply
+  karunga toh fir woh apne woh ancestor i.e. parent elemnt(div hai humara parent elemnt iss case mein) ke respect mein
+   apply hogi or best practice hai ki parent element ko 'relative' position dedo....fir uske baad hi absolute position
+    deni chahiye uss parent ke content ko*/
+
+.container{
+    position: relative;
+    height: 1200px;
+    background-color: darkgoldenrod;
+}
+
+img{
+    margin: 10px;
+}
+
+div{
+    border: 1px solid black;
+}
+/* .image1{
+    position: relative;
+    top: 100px;
+    left: 100px;
+} */
+
+/* .image2{
+    position: absolute;
+} */
+
+.image4{
+    position: fixed;
+}
+
+.image1{
+    top: 150px;
+    position: sticky;
+}
+
+.second-box{
+    border: 3px solid red;
+    background-color: aquamarine;
+    height: 800px;
+}
+

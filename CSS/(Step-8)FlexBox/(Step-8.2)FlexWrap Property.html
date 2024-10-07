@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 3px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            /* Flex wrap propert kaa demo try karne ke liye inspect page karo or fir screen kaa size decrese karo.... */
+            /* 
+            'Flex-warp: wrap' wali property ke jo bhi content screen par hota hai woh next line mein chala jaata hai jab bhi
+            screen kaa size chhota hota jaata hai....suppose 4 images hain and woh images laptop mein toh ek line mein show
+            ho jaa rahi hai but jab phone mein open hongi toh woh images yaa toh 2 images oopa r2 images neeche yaa fir ek
+            ke oopar ek image show hogi phone mein....i.e. automaically adjust ho jaayega content, screen size ke according.....
+            agar mein yeh wali property use nahin karunga toh fir meri woh 4 image phone ki screen mein jo hai ek hi line
+            mein dikhengi but phone ki screen chhoti hao toh fir woh squeeze kar jaayegi image i.e. origina size nahin 
+            hoga images kaa.
+            */
+
+            /* flex-wrap: wrap-reverse;  */ /* different different properties of flex-wrap*/
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        #box1{
+            background-color:green;
+        }
+        #box2{
+            background-color:chocolate;
+        }
+        #box3{
+            background-color:cornflowerblue;
+        }
+        #box4{
+            background-color:violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Step-10.5) Play-State_Animation</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid red;
+        }
+
+        .box {
+            margin: 10px;
+            background-color: crimson;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            animation-name: rotate;
+            animation-duration: 0.7s;
+            animation-iteration-count: infinite;
+            animation-play-state: paused;
+        }
+
+        .box:hover {
+            animation-play-state: running;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

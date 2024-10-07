@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Step-10.4) FillMode_Animation</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid red;
+        }
+
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            border-radius: 10px;
+            margin: 10px;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            /* Mera box source se destination tak pahunch gaya or destination par pahunchne ke baad main chahta hoon ki woh
+            box wahi destination par hi ruk jaaye stop ho jaaye.....toh iske liye main animation-fill-mode wali property
+            kaa use karta hoon */
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+
+            to{
+                top: 0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

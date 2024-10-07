@@ -1,0 +1,74 @@
+<!-- yeh neeche 2 property jo hai flex-items par apply hoti hai naa ki flex container yaa box par-->
+
+<!-- Flex-Shrink:- iss property kaa use karke main kisi bhi flex-item ko shrink karwa sakta hoon i.e. jab bhi meri screen kaa
+                    size chhota hoga toh fir mera woh particular item shrink with x-times compared to other items....
+                    suppose mere container mein 4 box pade hai or main box-1 par shrink wali property apply karta hoon or uss
+                    or uss property mein 4 value deta hoon toh fir mera box-1 4 guna shrink karega jab bhi screen kaa size chhota
+                hoga and other items apni normal speed se shrink honge jo bhi by default unki speed hain.-->
+
+
+  
+                
+<!-- Flex-grow:- iss property se kya hoga ki jis bhi flex-item par main iss property ko lagaunga toh fir woh item sabse pehle jitna
+                space available hai screen par horizontally(x-axis par i.e. agar flex-direction row hai toh) toh
+            woh poora space cover kar lega i.e. jo space bacha hua hai x-axis par woh space le lega....
+        
+        suppose maine 4-box banaye huye hain or by-default woh 4 box jo hain screen par left side mein hi show honge....
+    and right hand par kuch space bacha hua hoga, kyoki by default toh mere box jo hain left hand apr hi honge naa screen par toh
+    and right hand par space khaali rahega.....but agar main flex-grow apply karta hoon box-1 par...toh box-1
+jo hai poora space le lega jitna bhi space right hand side apr bacha hua tha.....agar main chaaron box par hi flex-grow:1 laga
+doon toh fir jitna bhi extra space bacha hua tha right hand par....toh woh space chaaron boxes cover kar lenge equal equal..
+i.e. maanlo agar 8cm space bacha hua hai right sode par toh fir saare boxes ke paas 2cm space or aa jaayega extra....i.e.
+at the end x-axis poori cover ho jaayegi content se
+
+(or baaki yeh jo hai flex-shrink property kaa opposite bhi hai)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 3px solid red;
+            display: flex;
+            height: 800px;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        #box1{
+            background-color:rgb(81, 181, 81);
+            /* flex-shrink: 4; */
+            flex-grow: 1;
+        }
+        #box2{
+            background-color:chocolate;
+        }
+        #box3{
+            background-color:cornflowerblue;
+        }
+        #box4{
+            background-color:violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+    </div>
+</body>
+</html>

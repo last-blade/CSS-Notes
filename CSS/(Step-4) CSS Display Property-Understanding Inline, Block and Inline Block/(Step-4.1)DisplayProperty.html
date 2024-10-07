@@ -1,0 +1,76 @@
+<!-- 
+    What is Display Property ?
+        In CSS, the 'display' property controls how an element is displayed in the layout of a webpage. It defines the rendering
+        behavior of the element in terms of its box type and its relationship with other elements in the document flow.
+
+        Block Elements:- <div>, <p>, <h1>-<h6>, <ul>, and <li>.(yeh poori poori width le lete hain display par)
+        Inline Elements:- <span>, <a>, <strong>, <em>, and <img>. (Jitni content ko need hoti hai utna hi space lete hain inline)
+
+            
+    NOTE:-(i)Agar main 'display:block' apply karunga inline element par toh fir inline element mera block element ki tarah behave karega
+          (ii)Agar main 'display:inline' apply karunga block element par toh fir block element mera inline element ki tarah behave karega
+          (iii)Agar main 'display:inline-block' apply karunga block element yaa inline element par toh fir woh element mera block
+           and inline dono ki property show karega display par, inline ki wjah se kya hoga ki jitna inline element kaa content hai
+            utni hi jagah lega or block ki wajah se mera element custom width, height and margin bhi follow karega, since mera inline block custom width and heigth support nahin karta tha but ab karega
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Step-4.1) CSS Display Property-Understanding Inline, Block and Inline Block</title>
+
+    <style>
+
+        /* 
+        What is Box-sizing:border-Box; property ?
+            Suppose maine ek box banaya 300 width and 300 height kaa or maine usko padding dedi 20px chaaron size se toh fir
+            jo original size tha mere box kaa 300*300 woh size badal jaayega i.e. mere box kaa size jo hai increse ho
+            jaayega 340*340 size kaa ban jaayega box because x-axis mein 20px padding and y-axis mein 20px padding, so
+            total hua 20+20+300(size of box) i.e. 340px kaa size ho gaya mere box kaa....but maine toh 300px kaa size
+            diya tha or mujhe 300*300 size kaa hi box chahiye apna i.e. original size hi maintain rakhna hai....toh
+            fir iske liye hi hum 'box-sizing:border-box' property kaa use karte hain....or apply karne se fir humare
+            box kaa size original maintain rahega padding add karne ke baad bhi
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            padding: 20px;
+        }
+
+        span{
+            height: 200px;
+            width: 200px;
+            border: 1px solid green;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="box">
+        <h3>BOX</h3>
+    </div>
+
+    <span>
+        my span Tag-1
+    </span>
+
+    <span>
+        my span Tag-2
+    </span>
+</body>
+</html>

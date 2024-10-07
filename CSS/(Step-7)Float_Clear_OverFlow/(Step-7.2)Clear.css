@@ -1,0 +1,16 @@
+#img1{
+    float: right;
+    height: 40vh;
+    width: 15vw;
+}
+
+#img2{
+    /* "clear" property basically apne agal bagal wale content to clear kar deti, jaise ki srk ki 2 image chipak ke lagi huyin hain
+    webpage par toh jo left image hain woh apni right wali image ko hatana chahti hai toh first wali image "clear right" property kaa
+    use karegi or khud wahan se hatke neeche aa jaayegi toh indirectly first wali image ke rigt wali image wahin rahegi bas 2nd wali
+    image neeche aa jaayegi */
+    float: right;
+    height: 40vh;
+    width: 15vw;
+    clear: right;
+}

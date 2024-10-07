@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Step-10.2) Timing Function_Animation</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid red;
+        }
+
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            border-radius: 10px;
+            margin: 10px;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1ms;
+
+            /* Agar hum timing function ko apply naa kare toh hum dekhenge ki pehle mera box ki speed constant hoti hai or jaise hi
+            destination par pahunchne wala hota hai toh ekdum se slow ho jaati hai....but main chahta hoon ki source se destination
+            tak ki speed same honi chahiye...toh iske liye hi timing function kaa use karte hain.....
+            
+            and agar mujhe chahiye ki mere box ki speed shuru mein slow ho or destination par jaise jaise pahunche toh fir speed
+            gradually increse hoti rahe...yaa fir vice versa....yaa fir start mein slow fir destination ke beech mein ekdum
+            tej speed or firse slow speed ho jaaye destination tak pahunchne mein......toh inn sab ke liye timing function
+            hi use karte hain hum*/
+
+            animation-timing-function: linear; /*Shuru se end tak speed constant rahegi*/
+
+            animation-timing-function: ease-in; /*slow start and end fast*/
+
+            animation-timing-function: ease-out; /*fast start and slow end*/
+
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); /*Read on MDN website about cubic-bezier*/
+        }
+
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+
+            to{
+                top: 0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

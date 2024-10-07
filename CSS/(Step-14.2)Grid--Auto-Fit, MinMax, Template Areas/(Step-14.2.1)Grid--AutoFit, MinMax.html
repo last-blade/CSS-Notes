@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100%;
+            width: 100%;
+        }
+
+        .container{
+            display: grid;
+            gap: 1rem;
+            background-color: #0F0F0F;
+            padding: 4rem;
+            /* 'auto-fit' se jo hai automatically humare webpage par columns create hote jaayenge, i.e. humein declare karne ki
+            zaroorat nahin hai ki kitne columns chahiye, jaise jaise screen kaa size increase yaa decrease hoga, wiase waise
+            mere columns kam yaa zyada hote rahenge, matlab ki agar mere phone mein agar 2 column ki hi jagah hai toh fir
+            'auto-fir' jo hai automatically 2 column hi bana dega...or agar laptop yaa badi screen hai toh usmein jitne columns
+            aa sakte hain utne columns bana dega....but inn columns kaa size kya hoga iss par depend karta hai....toh humein
+            'minmax' value deni padti hai....neeche jo hai '200' value 'min' ki hai and '300' value max ki hai....i.e. 
+            mere kisi bhi column kaa size minimum 200px toh rahega hi rahega or maximum 300px rahega isse oopar nahin jaa sakta...
+            agar mere phone ki screen mein 2 column aa sakte hain 200px ke...toh fir mere phone mein 2 column dikhenge 200px ke...
+
+            
+            Or yeh property jo hai responsive design banane mein bhot kaam aati hai....media queries kam lagani padengi....because
+            mujhe har ek screen size ke according jo hai kitne number of Columns yaa Rows ki zaroorat hai woh sab batane ki 
+            zaroorat nahin hai like 500px screen size par 2 column dikhao.....toh yeh sab media query lagane ki zaroorat hi nahin
+            hai....kyoki yeh wali property screen size ke according number of rows and columns ko increase or decrease kar deti hai
+            
+            video link: https://www.youtube.com/watch?v=VETRVLw7vz8&list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD&index=31&ab_channel=CodeHelp-byBabbar
+            */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+        }
+
+        .item{
+            border: 2px solid whitesmoke;
+            background-color: crimson;
+            color: white;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+</body>
+</html>

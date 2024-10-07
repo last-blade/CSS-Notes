@@ -1,0 +1,61 @@
+/* What is animation:- When one style changes to or converts into another style is called animation and it
+                        includes series of complex movements */
+                        /* or we can say, the animation is a combination of multiple transitions
+                           jahan par multiple transitions apply ho rahi hongi toh usse hum animation kehte hain
+                           kisi box par 2 yaa 2 se zyada transitions applied hain toh woh animation hai
+                           agar ek hi transition applied hai toh usse hum keval transition hi bolenge.
+                           
+                           jaise ki transition mein ek state se doosri state mein chale jaana only using one 
+                           step or transition called transition.....i.e., transition mein bas source to destination
+                           jaate hain hain matlab ki ek hi step involved hoti hai but animation mein hum ek 
+                           source se multiple destinations par jaate hain matlab ki multiple steps or transitions
+                           involved hoti hain animation mein*/
+
+                           /* To hum keh sakte hain ki transition ek child entity hai animation ki or animation
+                           khud mein ek parent entity hai transition ki....i.e. transtion jo hai animation kaa
+                           child hai */
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: burlywood;
+    border: 3px solid black;
+}
+
+.box{
+    height: 80px;
+    width: 250px;
+    background-color: chocolate;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+    position: relative;
+    /* animation-name: MyMovement; */
+    /* animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 20ms; */
+    /* animation-timing-function: linear; */
+    /* transition-timing-function: cubic-bezier(1,-0.3, 1,-0.31); */
+    /* animation-direction: alternate; */
+    /* animation-fill-mode: forwards; */
+     
+    animation:  2s linear 1s infinite alternate none running MyMovement;
+}
+    @keyframes MyMovement {
+        from
+        {
+            top: 0;
+            left: 0;
+        }
+        to
+        {
+            top: 0;
+            left: 1200px;
+        }
+    }

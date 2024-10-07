@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Step-10.1) KeyFrames_Animation</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid red;
+        }
+
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: crimson;
+            border-radius: 10px;
+            margin: 10px;
+            animation-name: rightMovement; /*Pehle animation kaa naam dena hota hai jaise maien 'rightMovement' naam rakha hai
+                                            apni animation kaa or fir hum iss animation name yaa fir variable ko define bhi
+                                            toh karenge....toh hum iss variable ki definition jo hai 'keyframes' kaa use karke
+                                            likhte hain....see below keyframe:-
+                                            */
+
+            animation-duration: 5s; /*Animation kitni der tak chalegi woh timing deni zaroori hai...iske bina animation nahin dikhegi*/
+            animation-iteration-count: 2; /*kitni baar repeat karni hai animation*/
+            animation-delay: 1s;
+        }
+
+        @keyframes rightMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+
+            to{
+                top: 0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

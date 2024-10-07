@@ -1,0 +1,26 @@
+.box{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    background-color: burlywood;
+
+    transition-property: width; /* "Transition-property" keyword kaa use karke hum kisi particular property par 
+                                    transition apply kar sakte hain, jaise ki humne width par transition apply
+                                    kar diya hai, chahe toh hum 'all' likh sakte hain width ki jagah jisse ki
+                                    sab par transition ki given properties apply ho jaayegi jab hum Hover karenge
+                                    or woh given properties trans. duration, trans. delay, trans. timing fn., etc.
+                                    or yeh properties keval "width" par hi apply hongi jaise ki delay wagerah
+                                    or baaki agar hum height change karte hain hover karne par toh fir height
+                                    jo hai instantly change ho jaayegi palak jhapakte hi kyoki humein tarnsition
+                                    toh keval 'width' par hi apply ki hai isliye widht mein hi smoothly changes 
+                                    aayenge jab hum hover karenge */
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-timing-function: linear;
+}
+
+.box:hover{
+    width: 1200px;
+    height: 800px;
+    background-color: chocolate;
+}

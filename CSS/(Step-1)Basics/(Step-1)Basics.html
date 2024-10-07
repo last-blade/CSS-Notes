@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    
+    <link rel="stylesheet" href="basicscss.css">
+    <!-- <link rel="stylesheet" href="basicscss.css"> -->
+
+    <!-- Internal CSS woh hoti hai jismein hum 'style' tag kaa use karte hain 'head' tag ke andar -->
+    <style>
+         h1{
+            color: green;
+         }
+
+         /* 
+         NOTE:-
+          Inline css ko zyada priority milti hai internal or external CSS se but agar main "internal CSS" ko priority dena
+          chahta hoon toh fir main ek property add kar dunga i.e. '!important' or fir issey jo hai internal CSS ko priority milegi
+           naa ki inline CSSS ko. See below for example..... 
+           */
+
+           p{
+            color: dodgerblue !important; /*neeche body tag mein paragraph 'p' tag diya hua hai and usmein maine inline CSS lagayi
+             huyi hai or color jo hai 'Coral' lagaya hai lekin webpage par coral colour show nahin hoga kyoki maine internal css mein 
+             '!important' property use ki hai....jiski wajah se internal CSS ko priority milegi or paragraph kaa colour blue ho
+              jaayega*/
+           }
+    </style>
+</head>
+<body>
+
+    <h1 id="head1">Welcome to WebDev. World</h1>
+
+    <div id="div01">
+        <a class="flexitem" href="https://www.amazon.in/">Amazon</a>
+        <a class="flexitem" href="https:/google.com">Google</a>
+    </div>
+    <span>
+
+    </span>
+    
+    <p id="para2" style="color: coral;"><!--Inline CSS mein hum html tag ke andar hi 'style' attribute ka use karte hain -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Eos corrupti delectus officia cupiditate hic enim voluptatem minima accusantium voluptate eum sequi debitis,
+          dolores provident ea.
+         Perspiciatis molestias incidunt dignissimos dolor.
+    </p>
+
+    <p id="para3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, sunt?
+    </p>
+
+    <p id="para4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Quasi laborum necessitatibus voluptate ex. Sed nam earum soluta eligendi, tempore error!
+    </p>
+
+    <span>
+     dis
+    </span>
+</body>
+</html>

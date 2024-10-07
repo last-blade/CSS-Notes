@@ -1,0 +1,51 @@
+<!-- 
+    NOTE:- "All transitions involve animation, but not all animations are transitions. Like we can say Transition is
+     child entity and animation is parent entity"  or We can say that 'set of transitions known as animation'.
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            border: 2px solid red;
+
+            /* Transition effect below:- */
+            transition-property: width; /*width par transition lagaya hai...i.e. jab width increase hogi tabhi tansition show hoga
+                                        but agar main width ki jagah 'all' value dedun toh fir kuch bhi 'hover' mein jo likha hai
+                                        woh transition sab par show hoga...see below....agar fark dekhna hai inn dono mein
+                                         (transition-property: width; & transition-property: all;) toh fir ek baar comment karo
+                                         kisi ek property ko or fir webpage par jaake hover karo tab fark dikhega....*/
+            transition-property: all;                            
+            transition-duration: 4s;
+            transition-delay: 10ms;
+            transition-timing-function: linear;
+        }
+        /* Transition apply karne ke liye pseudo claas kaa use karna padta hai(like 'hover') tabhi screen par transition
+         effect show hoga otherwise nahin hoga */
+        /*Transitions enable you to define the transition between two states of an element. Different states may be defined
+         using pseudo-classes like :hover or :active or dynamically set using JavaScript. */
+
+         .box:hover{
+            width: 300px;
+            height: 300px;
+            background-color: crimson;
+            border-radius: 10px;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
